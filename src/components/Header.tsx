@@ -24,9 +24,12 @@ export function Header() {
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2" aria-label="ASK Krankentransporte">
-              <span className="text-xl font-bold text-primary">ASK</span>
-              <span className="hidden sm:inline-block text-lg font-medium">Krankentransporte</span>
+            <Link to="/" className="flex items-center" aria-label="ASK Krankentransporte">
+              <img 
+                src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" 
+                alt="ASK Krankentransport Logo" 
+                className="h-10 md:h-12 w-auto"
+              />
             </Link>
           </div>
 
