@@ -7,28 +7,27 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-const navigationItems = [{
-  name: "home",
-  href: "/"
-}, {
-  name: "services",
-  href: "/services"
-}, {
-  name: "about",
-  href: "/about"
-}, {
-  name: "contact",
-  href: "/contact"
-}];
+
+const navigationItems = [
+  { name: "home", href: "/" },
+  { name: "services", href: "/services" },
+  { name: "about", href: "/about" },
+  { name: "contact", href: "/contact" }
+];
+
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const {
-    t
-  } = useLanguage();
-  return <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Full width banner image */}
-      <div className="w-full">
-        <img src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" alt="ASK Krankentransport Header" className="w-full h-auto object-scale-down" />
+  const { t } = useLanguage();
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* Header banner image with reduced height */}
+      <div className="w-full h-24 flex items-center justify-center bg-white">
+        <img 
+          src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" 
+          alt="ASK Krankentransport Header" 
+          className="h-full object-contain max-h-24" 
+        />
       </div>
       
       <div className="container px-4 sm:px-6 lg:px-8">
@@ -72,5 +71,6 @@ export function Header() {
           </Button>
         </div>
       </div>
-    </header>;
+    </header>
+  );
 }
