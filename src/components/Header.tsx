@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/providers/LanguageProvider";
@@ -6,13 +7,12 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigationItems = [
   { name: "home", href: "/" },
   { name: "services", href: "/services" },
   { name: "about", href: "/about" },
-  { name: "contact", href: "/contact" }
+  { name: "contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -21,25 +21,29 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      {/* Header banner image with reduced height */}
-      <div className="w-full h-24 flex items-center justify-center bg-white">
-        <img 
-          src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" 
-          alt="ASK Krankentransport Header" 
-          className="h-full object-contain max-h-24" 
-        />
-      </div>
-      
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center space-x-2" aria-label="ASK Krankentransporte">
+              <span className="text-xl font-bold text-primary">ASK</span>
+              <span className="hidden sm:inline-block text-lg font-medium">Krankentransporte</span>
+            </Link>
+          </div>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4">
-            {navigationItems.map(item => <Link key={item.name} to={item.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            {navigationItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
                 {t(item.name)}
-              </Link>)}
+              </Link>
+            ))}
           </nav>
 
-          <div className="flex items-center space-x-1 ml-auto">
+          <div className="flex items-center space-x-1">
             {/* Phone button for quick contact */}
             <Button variant="outline" size="sm" className="hidden sm:flex items-center space-x-2 mr-2">
               <Phone className="h-4 w-4" />
@@ -51,7 +55,14 @@ export function Header() {
             <LanguageSwitcher />
             
             {/* Mobile menu button */}
-            <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label={t('menu.toggle')} aria-expanded={isOpen}>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label={t('menu.toggle')}
+              aria-expanded={isOpen}
+            >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -59,11 +70,23 @@ export function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={cn("md:hidden", isOpen ? "block" : "hidden")}>
+      <div
+        className={cn(
+          "md:hidden",
+          isOpen ? "block" : "hidden"
+        )}
+      >
         <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t">
-          {navigationItems.map(item => <Link key={item.name} to={item.href} className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted" onClick={() => setIsOpen(false)}>
+          {navigationItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.href}
+              className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-muted"
+              onClick={() => setIsOpen(false)}
+            >
               {t(item.name)}
-            </Link>)}
+            </Link>
+          ))}
           {/* Mobile phone button */}
           <Button variant="default" size="sm" className="flex w-full items-center justify-center space-x-2 mt-2">
             <Phone className="h-4 w-4" />
