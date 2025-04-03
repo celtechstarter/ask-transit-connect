@@ -28,7 +28,7 @@ export function Header() {
               <img 
                 src="/lovable-uploads/a7d94968-4988-4bfd-87fb-e9022cad8de5.png" 
                 alt="ASK Krankentransporte Logo" 
-                className="h-10 w-10"
+                className="h-12 w-12 md:h-14 md:w-14"
               />
               <div>
                 <span className="text-xl font-bold text-primary">ASK</span>
