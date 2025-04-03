@@ -7,6 +7,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navigationItems = [
   { name: "home", href: "/" },
@@ -21,18 +22,17 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* Full width banner image */}
+      <div className="w-full">
+        <img 
+          src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" 
+          alt="ASK Krankentransport Header" 
+          className="w-full h-auto"
+        />
+      </div>
+      
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center" aria-label="ASK Krankentransporte">
-              <img 
-                src="/lovable-uploads/d47c07cc-564a-46a9-9daf-1099aa851a2e.png" 
-                alt="ASK Krankentransport Logo" 
-                className="h-10 md:h-12 w-auto"
-              />
-            </Link>
-          </div>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4">
             {navigationItems.map((item) => (
@@ -46,7 +46,7 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center space-x-1 ml-auto">
             {/* Phone button for quick contact */}
             <Button variant="outline" size="sm" className="hidden sm:flex items-center space-x-2 mr-2">
               <Phone className="h-4 w-4" />
