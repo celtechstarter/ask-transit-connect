@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# Demo-Webseite für professionelle Firmenlösungen
 
-## Project info
+Willkommen im Repository meiner Demo-Webseite, die von **Marcel Welk** entwickelt wurde. Dieses Projekt demonstriert, wie moderne, barrierefreie und vollständig anpassbare Webseiten für Firmen aussehen können, die an professionellen Weblösungen interessiert sind. Die Webseite dient als Beispiel und Verkaufspräsentation für Unternehmen, die ähnliche Projekte erwerben oder individuell anpassen möchten.  
+([docs.github.com](https://docs.github.com/articles/about-readmes)) ([freeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/))
 
-**URL**: https://lovable.dev/projects/7c188850-f47d-4ca3-b096-899c74becfdd
+---
 
-## How can I edit this code?
+## Projektübersicht
 
-There are several ways of editing your application.
+**Zielsetzung:**  
+Dieses Repository enthält den Quellcode einer Demo-Webseite, die unter Einhaltung aktueller Webstandards und Barrierefreiheitsrichtlinien entwickelt wurde. Die Seite ist so gestaltet, dass sie den Ansprüchen von Firmen gerecht wird, die in moderne, anpassbare und barrierefreie Weblösungen investieren möchten. Dabei wird besonderer Wert auf Responsive Design, ARIA-Konformität und eine intuitive Benutzerführung gelegt, um die Zugänglichkeit für alle Nutzergruppen – insbesondere für Senioren, Menschen mit Behinderungen und Sehbeeinträchtigte – zu gewährleisten.  
+([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)) ([W3C](https://www.w3.org/Translations/WCAG20-de/))
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7c188850-f47d-4ca3-b096-899c74becfdd) and start prompting.
+## Installation und lokale Entwicklung
 
-Changes made via Lovable will be committed automatically to this repo.
+Um die Demo-Webseite lokal zu installieren und zu entwickeln, befolgen Sie bitte die folgenden Schritte:
 
-**Use your preferred IDE**
+1. **Repository klonen:**  
+   Klonen Sie das Repository mithilfe der Git-URL:
+   ```sh
+   git clone <IHRE_GIT_URL>
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Navigieren Sie anschließend in das Projektverzeichnis:
+cd <PROJEKTNAME>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Abhängigkeiten installieren:
+Installieren Sie alle benötigten Pakete mit:
+npm install
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Entwicklungsserver starten:
+Starten Sie den lokalen Entwicklungsserver, der Auto-Reload und eine sofortige Vorschau bietet:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
+Rufen Sie die Webseite in Ihrem Browser unter http://localhost:3000 auf.
 
-**Edit a file directly in GitHub**
+Diese Schritte ermöglichen es Ihnen, die Webseite lokal zu testen, anzupassen und weiterzuentwickeln.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+Technologien und Funktionen
+Diese Demo-Webseite wurde mit modernsten Technologien entwickelt, um eine schnelle, skalierbare und ansprechende Benutzeroberfläche zu bieten:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Vite: Ein modernes Build-Tool für schnelle Entwicklungs- und Build-Zeiten.
 
-## What technologies are used for this project?
+TypeScript: Für eine robuste und typensichere Codebasis.
 
-This project is built with:
+React: Zum Aufbau einer komponentenbasierten Benutzeroberfläche.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+shadcn-ui: Eine UI-Komponentenbibliothek, die die Entwicklung beschleunigt.
 
-## How can I deploy this project?
+Tailwind CSS: Ein Utility-First CSS Framework, das flexible und anpassbare Styles ermöglicht.
 
-Simply open [Lovable](https://lovable.dev/projects/7c188850-f47d-4ca3-b096-899c74becfdd) and click on Share -> Publish.
+Darüber hinaus wird großer Wert auf Barrierefreiheit gelegt:
 
-## Can I connect a custom domain to my Lovable project?
+ARIA-Konformität: Alle interaktiven Elemente sind mit entsprechenden ARIA-Rollen und -Attributen versehen, um die Kompatibilität mit Screenreadern zu gewährleisten.
 
-Yes it is!
+Responsive Design: Die Webseite passt sich nahtlos an unterschiedliche Bildschirmgrößen und Endgeräte an.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Benutzerfreundliche Navigation: Inklusive "Skip to Content"-Links und anpassbarer Schriftgrößen, um die Bedienbarkeit zu optimieren.
+(MDN Web Docs) (W3C)
