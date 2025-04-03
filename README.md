@@ -1,62 +1,44 @@
 # Demo-Webseite für professionelle Firmenlösungen
 
-Willkommen im Repository meiner Demo-Webseite, die von **Marcel Welk** entwickelt wurde. Dieses Projekt demonstriert, wie moderne, barrierefreie und vollständig anpassbare Webseiten für Firmen aussehen können, die an professionellen Weblösungen interessiert sind. Die Webseite dient als Beispiel und Verkaufspräsentation für Unternehmen, die ähnliche Projekte erwerben oder individuell anpassen möchten.  
-([docs.github.com](https://docs.github.com/articles/about-readmes)) ([freeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/))
+Willkommen in diesem Repository, in dem Sie den Quellcode einer Demo-Webseite finden, die von **Marcel Welk** entwickelt wurde. Diese Demo dient als Verkaufspräsentation für Unternehmen, die Interesse an modernen, vollständig anpassbaren und barrierefreien Weblösungen haben. Die Webseite demonstriert, wie professionelle Firmenlösungen aussehen können und wird laufend aktualisiert, um den neuesten Webstandards und gesetzlichen Vorgaben (wie WCAG 2.1 und deutsches Barrierefreiheitsrecht) zu entsprechen ([docs.github.com](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)).
+
+---
+
+## Inhaltsverzeichnis
+
+- [Projektübersicht](#projektübersicht)
+- [Installation und lokale Entwicklung](#installation-und-lokale-entwicklung)
+- [Verwendete Technologien](#verwendete-technologien)
+- [Deployment](#deployment)
+- [Beitrag leisten](#beitrag-leisten)
+- [Kontakt](#kontakt)
+- [Lizenz](#lizenz)
+- [Quellen](#quellen)
 
 ---
 
 ## Projektübersicht
 
-**Zielsetzung:**  
-Dieses Repository enthält den Quellcode einer Demo-Webseite, die unter Einhaltung aktueller Webstandards und Barrierefreiheitsrichtlinien entwickelt wurde. Die Seite ist so gestaltet, dass sie den Ansprüchen von Firmen gerecht wird, die in moderne, anpassbare und barrierefreie Weblösungen investieren möchten. Dabei wird besonderer Wert auf Responsive Design, ARIA-Konformität und eine intuitive Benutzerführung gelegt, um die Zugänglichkeit für alle Nutzergruppen – insbesondere für Senioren, Menschen mit Behinderungen und Sehbeeinträchtigte – zu gewährleisten.  
-([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)) ([W3C](https://www.w3.org/Translations/WCAG20-de/))
+Dieses Repository enthält den vollständigen Quellcode der Demo-Webseite für professionelle Firmenlösungen. Das Projekt wurde mit dem Ziel realisiert, Unternehmen eine maßgeschneiderte, anpassbare und barrierefreie Webpräsenz zu präsentieren, die höchste Qualitätsansprüche erfüllt. Zu den zentralen Merkmalen gehören:
+
+- **Barrierefreiheit und ARIA-Konformität:**  
+  Die Webseite wurde gemäß den Web Content Accessibility Guidelines (WCAG) 2.1 entwickelt und setzt auf semantische HTML5-Elemente sowie ARIA-Attribute, um eine optimale Nutzbarkeit auch für Menschen mit Behinderungen zu gewährleisten ([MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)).
+
+- **Responsive und modernes Design:**  
+  Ein ansprechendes, responsives Layout, das sich an verschiedene Bildschirmgrößen anpasst und sowohl auf Desktop-PCs als auch auf mobilen Geräten eine erstklassige Nutzererfahrung bietet.
+
+- **Komplett anpassbar:**  
+  Die Demo-Webseite ist so aufgebaut, dass sie individuell an Kundenwünsche angepasst werden kann. Funktionen, Layouts und Designs können problemlos modifiziert werden, um den spezifischen Anforderungen verschiedener Unternehmen gerecht zu werden.
+
+Diese Demo-Webseite ist ideal für Firmen, die in professionelle Weblösungen investieren möchten und dabei auf Barrierefreiheit, Performance und modernes Design Wert legen ([freeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)).
 
 ---
 
 ## Installation und lokale Entwicklung
 
-Um die Demo-Webseite lokal zu installieren und zu entwickeln, befolgen Sie bitte die folgenden Schritte:
+Um die Demo-Webseite auf Ihrem lokalen Rechner zu installieren und zu bearbeiten, folgen Sie diesen Schritten:
 
 1. **Repository klonen:**  
-   Klonen Sie das Repository mithilfe der Git-URL:
+   Klonen Sie das Repository mit Ihrer Git-URL:
    ```sh
    git clone <IHRE_GIT_URL>
-
-Navigieren Sie anschließend in das Projektverzeichnis:
-cd <PROJEKTNAME>
-
-Abhängigkeiten installieren:
-Installieren Sie alle benötigten Pakete mit:
-npm install
-
-
-Entwicklungsserver starten:
-Starten Sie den lokalen Entwicklungsserver, der Auto-Reload und eine sofortige Vorschau bietet:
-
-npm run dev
-Rufen Sie die Webseite in Ihrem Browser unter http://localhost:3000 auf.
-
-Diese Schritte ermöglichen es Ihnen, die Webseite lokal zu testen, anzupassen und weiterzuentwickeln.
-
-
-Technologien und Funktionen
-Diese Demo-Webseite wurde mit modernsten Technologien entwickelt, um eine schnelle, skalierbare und ansprechende Benutzeroberfläche zu bieten:
-
-Vite: Ein modernes Build-Tool für schnelle Entwicklungs- und Build-Zeiten.
-
-TypeScript: Für eine robuste und typensichere Codebasis.
-
-React: Zum Aufbau einer komponentenbasierten Benutzeroberfläche.
-
-shadcn-ui: Eine UI-Komponentenbibliothek, die die Entwicklung beschleunigt.
-
-Tailwind CSS: Ein Utility-First CSS Framework, das flexible und anpassbare Styles ermöglicht.
-
-Darüber hinaus wird großer Wert auf Barrierefreiheit gelegt:
-
-ARIA-Konformität: Alle interaktiven Elemente sind mit entsprechenden ARIA-Rollen und -Attributen versehen, um die Kompatibilität mit Screenreadern zu gewährleisten.
-
-Responsive Design: Die Webseite passt sich nahtlos an unterschiedliche Bildschirmgrößen und Endgeräte an.
-
-Benutzerfreundliche Navigation: Inklusive "Skip to Content"-Links und anpassbarer Schriftgrößen, um die Bedienbarkeit zu optimieren.
-(MDN Web Docs) (W3C)
