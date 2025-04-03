@@ -79,7 +79,7 @@ export default function HomePage() {
                 <Button 
                   size="lg"
                   variant="outline" 
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white bg-transparent text-white hover:bg-white/20 dark:border-white dark:text-white dark:hover:bg-white/10"
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   {t('hero.cta')}
